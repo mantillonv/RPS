@@ -1,0 +1,178 @@
+audio {
+    opacity: 0.5;
+}
+
+body {
+    background-image: url(./images/bg2.png);
+}
+
+.gameTitle {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes jiggle {
+    0% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    100% { transform: translateX(-3px); }
+}
+
+.gameTitle img {
+    animation: jiggle 1.5s infinite;
+}
+
+@keyframes stop-jiggle {
+    0%, 100% { transform: translateX(0); }
+}
+
+.resultText .ties {
+    background-color: #FAF3E6;
+    padding: 10px 20px;
+    border: 2px solid #D2B48C;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    font-family: "Times New Roman", sans-serif;
+    font-size: 24px;
+    color: #8B4513;
+}
+
+.resultText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.results, .winnerDiv {
+    background-color: #FAF3E6;
+    padding: 10px;
+    border: 2px solid #D2B48C;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    font-family: "Times New Roman", sans-serif;
+    font-size: 24px;
+    color: #8B4513;
+    width: 200px;
+    height: 27px;
+}
+
+.winnerDiv {
+    font-size: 24px;
+}
+
+.gameBoard {
+    background-image: url(./images/ui.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-top: 36px;
+    padding-bottom: 42px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.playerInfo, .computerInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-right: 64px;
+}
+
+.gameBoard .playerSection .playerChoice img,
+.gameBoard .computerSection .computerChoice img {
+    padding: 0px;
+    margin-top: 12px;
+    display: none;
+}
+
+.p1, .p2 {
+    display: flex;
+    height: 90px;
+    width: 150px;
+}
+
+.score .ties, .winnerMessage {
+    background-color: #FAF3E6;
+    padding: 10px 20px;
+    border: 2px solid #D2B48C;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    font-family: "Times New Roman", sans-serif;
+    font-size: 24px;
+    color: #8B4513;
+}
+
+.gameBoard .score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.playerSection, .computerSection {
+    display: flex;
+    justify-content: center;
+}
+
+.playerImg, .computerImg {
+    display: flex;
+    flex-direction: row;
+} 
+
+ .pImg {
+    display: flex;
+    max-width: 172px;
+    max-height: 172px;
+}
+
+.rock, .paper, .scissors {
+    display: flex;
+    max-width: 172px;
+    max-height: 172px;
+    overflow: hidden;
+}
+
+img {
+    padding: 56px;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAF3E6;
+    padding: 10px;
+    border: 2px solid #D2B48C;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    font-family: "Times New Roman", sans-serif;
+    font-size: 24px;
+    color: #8B4513;
+    width: 200px;
+    height: 27px;
+}
+
+.reset {
+    display: none;
+}
+
+.gameBoard .playerSection .playerImg img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gameBoard .playerSection .playerImg img:hover {
+    transform: scale(1.1);
+}
