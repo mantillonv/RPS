@@ -4,13 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <script src="script.js"></script>
+    <title>RPM</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <script>
-    </script>
+    <audio id= "soundtrack" controls autoplay loop>
+        <source src= "./sfx/soundtrack.mp3" type= "audio/mpeg"></source>
+    </audio>
+    <audio id= "hoverSound">
+        <source src ="./sfx/hover.wav" type= "audio/wav"></source>
+    </audio>
+    <div class= "gameTitle">
+        <img src= "./images/title logo.png" alt="Rock Paper Scissors">
+    </div>
+    <div class="resultText">
+        <div class= "score">
+            <div class= "ties">Ties: 0</div>
+        </div>
+        <div class= "results">
+        </div>
+        <div class= "winnerDiv">
+            <h2 id= "winner"></h2>
+        </div>
+    </div>
+    <div class= "gameBoard">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <button id="playAgainBtn">Play Again?</button>
+            </div>
+          </div>
+        <div class= "playerSection">
+            <div class= "playerChoice">
+                <img id= "redRock" src= "./images/rock-red.png" alt="Player Rock">
+                <img id= "redPaper" src= "./images/paper-red.png" alt="Player Paper">
+                <img id= "redScissors" src= "./images/scissors-red.png" alt="Player Scissors">
+            </div>
+            <div class= "playerInfo">
+                <h2 class= "playerScore">Player Score: 0</h2>
+                <img src= "./images/p1.png" alt= "Player 1" class= "p1">
+            </div>
+            <div class= "playerImg">
+                <img src= "./images/rock.png" alt= "Rock" class= "pImg" id= "rock">
+                <img src= "./images/paper.png" alt= "Paper" class= "pImg" id= "paper">
+                <img src= "./images/scissors.png" alt="Scissors" class= "pImg" id= "scissors">
+            </div>
+        </div>
+        <div class = "computerSection">
+            <div class= "computerChoice">
+                <img id= "blueRock" src= "./images/rock-blue.png" alt= "Computer Rock">
+                <img id= "bluePaper" src= "./images/paper-blue.png" alt= "Computer Paper">
+                <img id= "blueScissors" src= "./images/scissors-blue.png" alt= "Computer Scissors">
+            </div>
+            <div class= "computerInfo">
+                <h2 class= "computerScore">Computer Score: 0</h2>
+                <img src= "./images/p2.png" alt= "Player 2" class= "p2">
+            </div>
+            <div class= "computerImg">
+                <img src= "./images/rock.png" alt= "Rock" class= "rock">
+                <img src= "./images/paper.png" alt= "Paper" class= "paper">
+                <img src= "./images/scissors.png" alt="Scissors" class= "scissors">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
