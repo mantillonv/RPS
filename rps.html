@@ -9,12 +9,14 @@
 </head>
 
 <body>
+    <!-- Audio -->
     <audio id= "soundtrack" controls autoplay loop>
         <source src= "./sfx/soundtrack.mp3" type= "audio/mpeg"></source>
     </audio>
     <audio id= "hoverSound">
         <source src ="./sfx/hover.wav" type= "audio/wav"></source>
     </audio>
+    <!-- Board -->
     <div class= "gameTitle">
         <img src= "./images/title logo.png" alt="Rock Paper Scissors">
     </div>
@@ -34,6 +36,7 @@
               <button id="playAgainBtn">Play Again?</button>
             </div>
           </div>
+        <!-- Player -->
         <div class= "playerSection">
             <div class= "playerChoice">
                 <img id= "redRock" src= "./images/rock-red.png" alt="Player Rock">
@@ -50,6 +53,7 @@
                 <img src= "./images/scissors.png" alt="Scissors" class= "pImg" id= "scissors">
             </div>
         </div>
+        <!-- Computer -->
         <div class = "computerSection">
             <div class= "computerChoice">
                 <img id= "blueRock" src= "./images/rock-blue.png" alt= "Computer Rock">

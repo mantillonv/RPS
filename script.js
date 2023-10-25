@@ -1,4 +1,4 @@
-// Audio
+// Audio //
 const audio = document.getElementById("soundtrack");
 audio.volume = 0.45;
 
@@ -19,7 +19,7 @@ function playHoverSound() {
     hoverSound.play();
 }
 
-// Game Logic
+// Game Play Logic //
 const roundsInt = 5;
 let userScore = 0;
 let computerScore = 0;
@@ -173,6 +173,8 @@ document.getElementById("scissors").addEventListener("click", function () {
     playGame("scissors");
 });
 
+
+// Game End Logic //
 function endGame() {
     const winnerDiv = document.querySelector(".winnerDiv");
     const winnerText = userScore > computerScore ? "You win!" : "Computer wins!";
